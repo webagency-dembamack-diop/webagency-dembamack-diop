@@ -1,0 +1,569 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+body{
+    font-family: 'robotoregular', Impact, "Arial Black", Arial, Verdana, sans-serif; 
+    position: relative;
+}
+
+section{
+    width: 100%;
+    position: relative;
+}
+
+h1, h3, p, ul, .adresse, .message{
+    font-family: 'robotoregular', Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.header-inner{
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.7);
+    position:fixed;
+    width:100%;
+    z-index: 3;
+    background-color: white;
+}
+.logo img{
+    width: 100%;
+    cursor: pointer;
+}
+.menu{
+    padding: 15px;
+    position: relative;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #575757;
+}
+.menu ul li{
+    position: relative;
+}
+.menu ul li:hover::before{
+    display: block;
+}
+.menu ul li::before{
+    position: absolute;
+    top: -15px;
+    display: none;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(92, 173, 211);
+}
+
+.banniere-image img{
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+#accueil{
+    position: relative;
+    margin-top: 90px;
+}
+
+.titre-accueil{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    left: 8%;
+    color: white;
+}
+.sous-titre-accueil{
+    line-height: 3em;
+}
+
+.infos a{
+    background-color: rgb(92, 173, 211);
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-bottom: 3px solid #468cad;
+    line-height: 3em;
+}
+
+.fleche-droite{
+    position: absolute;
+    color: white;
+    height: 60px;
+    width: 30px;
+    top: 40%;
+    right: 0;
+    border-radius: 60px 0 0 60px;
+    background-color: rgba(34, 38, 46, 0.3);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fleche-gauche{
+    position: absolute;
+    color: white;
+    height: 60px;
+    width: 30px;
+    top: 40%;
+    left: 0;
+    border-radius: 0 60px 60px 0;
+    background-color: rgba(34, 38, 46, 0.3);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteneur-barre-bleue{
+    position: absolute;
+    bottom: 3px;
+    background-color: rgba(34, 38, 46, 0.2);
+    height: 5px;
+    width: 100%;
+}
+
+.barre-bleue{
+    width: 15%;
+    height: 5px;
+    background: rgb(92, 173, 211);
+}
+
+h2{
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Verdana'; 
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+}
+/*===============Debut liseret==============*/
+.liseret{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    margin-top: 1rem;
+}
+.tiret{
+    width: 140px;
+    height: 1px;
+    background-color: #d1d4d9;
+    align-self: center;
+}
+.dot{
+    position: absolute;
+    top: -10px;
+    color: rgb(92, 173, 211);
+}
+.dot .fas{
+    border: 3px solid white;
+    border-radius: 50%;
+}
+/*==============Fin liseret=================*/
+
+.presentation-nos-services{
+    margin-top: 55px;
+    text-align: center;
+}
+.conteneur-services{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.ordinateur img{
+    width: 100%;
+}
+.services-bloc-droite{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.services-detail{
+    display: flex;
+}
+.services-detail-icone{
+    position: relative;
+    margin-right: 25px;
+}
+.my-icon{
+    font-size: small;
+    color: rgb(92, 173, 211);
+    height: 50px;
+    width: 50px;
+    border: 1px solid #dedede;
+    border-radius: 50%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot-ux-ui-seo{
+    height: 22px;
+    width: 22px;
+    border: 5px solid white;
+    background-color: rgb(92, 173, 211);
+    border-radius: 50%;
+    position: absolute;
+    left: 48px;
+    top: 20px;
+}  
+
+.services-detail-text{
+    width: 90%;
+}
+
+#portfolio{
+    background-color: rgb(245, 245, 245);
+    margin-top: 40px;
+}
+
+section ul{
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+}
+
+section ul li{
+    display: inline-block;
+}
+
+.menu-projets{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.menu-projets ul{
+    padding: 0;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+}
+
+.menu-projets ul li{
+    position: relative;
+    padding: 10px 15px;
+    border-bottom: 3px solid #E5E5E5;
+}
+
+.menu-projets ul li:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.menu-projets ul li:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.menu-projets .project-active, .menu-projets li:hover{
+    background-color: #5CADD3;
+    border-bottom: 3px solid #468CAD;
+    cursor: pointer;
+}
+.menu-projets .project-active .all {
+    color: white;
+
+}
+.menu-projets ul li a{
+    color: black;
+    padding: 8px 8px 8px 8px;
+}
+.menu-projets li:hover a{
+    background-color: #5CADD3;
+    color: white;
+    cursor: pointer;
+}
+.menu-projets ul .project-active .fas{
+    position: absolute;
+    opacity: 1;
+}
+
+.menu-projets ul li .fas{
+    position: absolute;
+    color: #468CAD;
+    top: 72%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+}
+.menu-projets ul li:hover .fas{
+    display: block;
+    opacity: 1;
+
+}
+
+.titre-nos-projets{
+    padding-top: 15px;
+}
+
+.projets{
+    background-color: rgb(245, 245, 245);
+}
+
+.webagency{
+    color: rgb(92, 173, 211);
+}
+
+.presentation-projet{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.project-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.project-item{
+    position: relative;
+    width: 270px;
+    margin: 15px;
+    cursor: pointer;
+}
+.project-item-over{
+    position: relative;
+    opacity: 0;
+}
+.project-item:hover .project-item-over{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+.portfolio-project{
+    width: 100%;
+    display: block;
+}
+.legende-item{
+    bottom: 0;
+    position: absolute;
+    background: #1c1b1b9e;
+    color: white;
+    padding: 8px;
+    width: 100%;
+    height: 85px;
+}
+.legende-item h3{
+    font-size: 1.1rem;
+}
+.legende-item .text-item{
+    font-size: 0.8rem;
+}
+.project-item-eye{
+    position: absolute;
+    bottom: 62px;
+    right: 25px;
+}
+.project-item-eye .far{
+    width: 43px;
+    height: 43px;
+    bottom: 89px;
+    color: white;
+    border: 2px solid #fff;
+    background: #61abd2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tel{
+    border-bottom: 2px dotted rgba(14, 14, 14, 0.5);
+}
+
+.carte iframe{
+    border: none;
+    width: 100%;
+    height: 600px;
+}
+.carte{
+    position: relative;
+    margin-top: 52px;
+    width: 100%;
+}
+
+.voile-bleue{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(23, 172, 232, 0.2);
+    pointer-events: none;
+    width: 100%;
+}
+
+/*==================Debut Formulaire====================*/
+.formulaire{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f6f8cf;
+    width: 350px;
+}
+
+.info-formulaire{
+    padding: 20px 25px 8px;
+}
+.info-formulaire p{
+    color: #64686d;
+}
+
+h3{
+    font-size: 1.5em;
+}
+
+h4{
+    color: #64686d;
+}
+
+form{
+    width: 100%;
+    padding: 2px 10px 15px 25px;
+}
+.name, .email, .subject{
+    width: 95%;
+    height: 28px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #cccccc;
+    margin-top: 15px;
+}
+.message {
+    width: 95%;
+    height: 137px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-top: 15px;
+}
+.bouton-form{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(92, 173, 211);
+    border-radius: 3px;
+    padding: 8px;
+    width: auto;
+    border-bottom: 3px solid #468cad;
+    line-height: 4em;
+}
+/*===============Fin Formulaire================*/
+
+@media only screen and (max-width: 576px)
+{
+    body{ 
+        display: block;
+    }
+    .header-inner{
+        flex-direction: column;
+    }
+    .menu{
+        width: 100%;
+        padding: 0;
+    }
+    .menu ul{
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .menu ul a{
+        padding: 10px;
+    }
+    .header-inner .logo{
+        padding-top: 8px;
+    }
+    .menu ul li::before{
+        top: 0;
+        height: 1px;
+    }
+    .banniere-image{
+        margin-top: 255px;
+    }
+    .titre-accueil{
+        top: 30%;
+    }
+
+    h1{
+        font-size: 0.9em;
+    }
+    .sous-titre-accueil{
+        display: none;
+    }
+    .infos{
+        display: none;
+    }
+    .services-bloc-droite{
+        margin: 0;
+    }
+    .services-detail{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .services-detail-icone{
+        margin-right: 0;
+    }
+    .services-detail-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .project-item{
+        display: block;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 1.8em;
+    }
+    .formulaire{
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 90%;
+    }
+}
+
